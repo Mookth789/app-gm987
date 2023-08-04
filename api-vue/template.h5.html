@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" type="image/x-icon" href="https://cdn.uviewui.com/uview/common/favicon.ico">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<!-- ใช้ระหว่างการเปิดตัวอย่างเป็นทางการ ไม่ได้เปิดใช้งานระหว่างการพัฒนา ↓ -->
+		<script src="/static/common/js/touch-emulator.js"></script>
+		<script>
+			TouchEmulator();
+		</script>
+		<style>
+			::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
+		
+          <!-- ใช้ระหว่างการเปิดตัวอย่างเป็นทางการ ไม่ได้เปิดใช้งานระหว่างการพัฒนา ↑ -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'
+			})
+		</script>
+		<link rel="stylesheet" href="<%= BASE_URL %>static/index.css" />
+	</head>
+	<body>
+<!-- ไฟล์นี้เป็นเทมเพลต HTML ของแพลตฟอร์ม H5 ไม่ใช่รายการแอปพลิเคชัน -->
+<!-- อย่าเขียนโค้ดเพจในไฟล์นี้หรือเรียกใช้ไฟล์นี้โดยตรง -->
+<!-- ดูรายละเอียดเอกสาร: https://uniapp.dcloud.io/collocation/manifest?id=h5-template -->
+		<noscript>
+			<strong>ไซต์นี้ต้องเปิดใช้งาน JavaScript เพื่อเรียกใช้</strong>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+		<script>
+			/*BAIDU_STAT*/
+		</script>
+	</body>
+</html>
